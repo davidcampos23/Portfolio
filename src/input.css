@@ -16,7 +16,7 @@
 
 body{
     background-color: #EBEBEC;
-    /* max-width: 1200px; */
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -54,6 +54,11 @@ h2{
 p{
     font-family: 'Poppins';
     font-weight: 200;
+}
+
+.imgSkills{
+    @apply  w-48 h-48 p-3 flex flex-col items-center bg-white;
+    box-shadow: 0 0 0.5rem white;
 }
 
 .linkHome{
