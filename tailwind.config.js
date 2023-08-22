@@ -19,10 +19,13 @@ module.exports = {
         bw: '0 0 0.5rem white',
       },
       width:{
-        project: '50rem'
+        project: '50rem',
+        px472: '29.5rem',
+        px976: '61rem'
       },
       height:{
-        project: '25rem'
+        project: '25rem',
+        px89: '5.5rem'
       }
     },
   },

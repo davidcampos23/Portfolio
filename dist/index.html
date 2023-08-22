@@ -9,21 +9,21 @@
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header class="bg-white">
+    <header class="bg-white top-0 sticky">
         <nav class="flex items-center p-3 justify-around gap-3">
             <img src="../img/darkmode.png" alt="darkmode" class="ml-8 w-10">
             <strong class="text-px40 text-second">David <span class="text-black">Campos</span></strong>
             <ul class="flex ml-auto mr-12">
-                <li><strong><a href="#home"></a>Home</strong></li>
-                <li><strong><a href="#skills"></a>Skills</strong></li>
-                <li><strong><a href="#projects"></a>Projects</strong></li>
-                <li><strong><a href="#contacts"></a>Contact</strong></li>
+                <li><strong><a href="#">Home</strong></a></li>
+                <li><strong><a href="#skills">Skills</strong></a></li>
+                <li><strong><a href="#projects">Projects</strong></a></li>
+                <li><strong><a href="#contacts">Contact</strong></a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Home -->
-    <section id="Home" class="bg-white grid grid-cols-2 justify-around items-center gap-16 p-16 shadow-bx">
+    <section id="home" class="bg-white grid grid-cols-2 justify-around items-center gap-16 p-16 shadow-bx">
         <div class="mt-24 self-start grid gap-7 ml-8">
             <h2 class="text-px28">Hi There! I´m</h2>
             <h2 id="digitando" class="text-px48">Full-Stack Developer</h2>
@@ -37,7 +37,7 @@
     </section>
 
     <!-- Skills -->
-    <section>
+    <section id="skills">
         <div class="text-center">
             <h3><strong class="text-px48 text-second">Skills</strong></h3>
             <p class="-mt-2 mb-3 text-xl opacity-60">Hardwere Skills</p>
@@ -89,7 +89,7 @@
     </section>
     
     <!-- Projects -->
-    <section>
+    <section id="projects">
         <div class="text-center">
             <h3><strong class="text-px48 text-second">Projects</strong></h3>
             <p class="-mt-2 mb-3 text-xl opacity-60">See My Works</p>
@@ -120,14 +120,71 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-white w-project h-project shadow-bw"></div>
-            <div class="bg-white w-project h-project shadow-bw"></div>
-            <div class="bg-white w-project h-project shadow-bw"></div>
+            <div class="bg-white w-project h-project shadow-bw">
+                <div class="w-full h-5/6 grid grid-cols-2 justify-center p-4 mt-8">
+                    <img class="w-full h-full" src="../img/projects/ToDoList.png" alt="imagem to do list">
+                    <div>
+                        <h4 class="text-px32">To-Do List</h4>
+                        <div class="text-px28">
+                            <span>C#</span>
+                            <span>SQLite</span>
+                            <span>WPF</span>
+                        </div>
+                        <p class="text-px24 mt-2">
+                            Projeto de um gerenciador de tarefas baseado na metodologia ágil Scrum, desenvolvido em uma aplicação C#.
+                        </p>
+                        <div class="text-px24 mt-14">
+                            <button class="bg-primary w-36 h-9"><a href="">GitHub</a></button>
+                            <button class="bg-second w-36 h-9"><a href="">Download</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white w-project h-project shadow-bw">
+                <div class="w-full h-5/6 grid grid-cols-2 justify-center p-4 mt-8">
+                    <img class="w-full h-full" src="../img/projects/ToDoList.png" alt="imagem to do list">
+                    <div>
+                        <h4 class="text-px32">To-Do List</h4>
+                        <div class="text-px28">
+                            <span>C#</span>
+                            <span>SQLite</span>
+                            <span>WPF</span>
+                        </div>
+                        <p class="text-px24 mt-2">
+                            Projeto de um gerenciador de tarefas baseado na metodologia ágil Scrum, desenvolvido em uma aplicação C#.
+                        </p>
+                        <div class="text-px24 mt-14">
+                            <button class="bg-primary w-36 h-9"><a href="">GitHub</a></button>
+                            <button class="bg-second w-36 h-9"><a href="">Download</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white w-project h-project shadow-bw">
+                <div class="w-full h-5/6 grid grid-cols-2 justify-center p-4 mt-8">
+                    <img class="w-full h-full" src="../img/projects/ToDoList.png" alt="imagem to do list">
+                    <div>
+                        <h4 class="text-px32">To-Do List</h4>
+                        <div class="text-px28">
+                            <span>C#</span>
+                            <span>SQLite</span>
+                            <span>WPF</span>
+                        </div>
+                        <p class="text-px24 mt-2">
+                            Projeto de um gerenciador de tarefas baseado na metodologia ágil Scrum, desenvolvido em uma aplicação C#.
+                        </p>
+                        <div class="text-px24 mt-14">
+                            <button class="bg-primary w-36 h-9"><a href="">GitHub</a></button>
+                            <button class="bg-second w-36 h-9"><a href="">Download</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
     <!-- Contacts -->
-    <section class="">
+    <section id="contacts">
         <div class="text-center">
             <h3><strong class="text-px48 text-second">Contacts</strong></h3>
             <p class="-mt-2 mb-3 text-xl opacity-60">How to Help</p>
@@ -136,6 +193,19 @@
                 <div class="bg-second w-5 h-5 rounded-full"></div>
                 <div class="bg-second w-5 h-5 rounded-full"></div>
                 <div class="bg-second w-5 h-5 rounded-full"></div>
+        </div>
+        <div class="flex justify-center mt-10 mb-16">
+            <form action="https://formsubmit.co/davidcamposg23@gmail.com" method="post" class="w-px976 flex flex-col gap-3">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_autoresponse" value="Recebi sua mensagem, obrigado pelo contato e logo responderei!">
+                <div class="flex justify-between">
+                    <input type="text" name="name" placeholder="Your Name" class="w-px472 h-px89 p-3 text-px28">
+                    <input type="email" name="email" placeholder="Your Email Address" class="w-px472 h-px89 p-3 text-px28">
+                </div>
+                <input type="text" name="subject" placeholder="Subject" class="w-px976 h-px89 p-3 text-px28">
+                <textarea name="message" rows="8" placeholder="How can i help you?" class="p-3 text-px28"></textarea>
+                <button type="submit" class="bg-white w-60 h-px89 mt-5 m-auto text-px28">Contact Now</button>
+            </form>
         </div>
 
         <footer class="bg-white grid grid-cols-4 items-center justify-around p-3 g-3">
