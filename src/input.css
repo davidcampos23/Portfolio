@@ -20,6 +20,14 @@ body{
     margin: 0 auto;
 }
 
+.navTrasm{
+    transition: transform 0.2s;
+}
+
+.nav--hidden{
+    transform: translateY(-100px);
+}
+
 #Home{
     animation: inicializar .7s forwards;
 }

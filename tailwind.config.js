@@ -6,6 +6,7 @@ module.exports = {
       colors:{
         primary: '#EBEBEC',
         second: '#FFB3B3',
+        op5: 'rgba(0,0,0, 0.5)'
       },
       fontSize:{
         px24: '1.5rem',
@@ -24,6 +25,7 @@ module.exports = {
         px976: '61rem'
       },
       height:{
+        navH: 'var(--nav-height)',
         project: '25rem',
         px89: '5.5rem'
       }
