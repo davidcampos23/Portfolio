@@ -6,7 +6,8 @@ module.exports = {
       colors:{
         primary: '#EBEBEC',
         second: '#FFB3B3',
-        op5: 'rgba(0,0,0, 0.5)'
+        op5: 'rgba(0,0,0, 0.5)',
+        stacks: '#70c3e1'
       },
       fontSize:{
         px24: '1.5rem',

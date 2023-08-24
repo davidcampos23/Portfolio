@@ -1,18 +1,39 @@
 // Escrever Text --------------------------------------------------------------
-function ativarTitulo(element)
-{
-    const arrText = element.innerHTML.split('');
-    element.innerHTML = '';
+function ativarTitulo(element, textToWrite) {
+    const typingSpeed = 75;
+    const deletingSpeed = 50;
 
-    arrText.forEach((letra, i)=> {
-        setTimeout(()=>{
-            element.innerHTML += letra;
-        }, 75 * i)
-    })
+    let currentIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+        const currentText = textToWrite[currentIndex];
+        
+        if (isDeleting) {
+            element.textContent = currentText.slice(0, element.textContent.length - 1);
+        } else {
+            element.textContent = currentText.slice(0, element.textContent.length + 1);
+        }
+
+        if (!isDeleting && element.textContent === currentText) {
+            isDeleting = true;
+            setTimeout(type, 2000);
+        } else if (isDeleting && element.textContent === '') {
+            isDeleting = false;
+            currentIndex = (currentIndex + 1) % textToWrite.length;
+            setTimeout(type, 500);
+        } else {
+            setTimeout(type, isDeleting ? deletingSpeed : typingSpeed);
+        }
+    }
+
+    type();
 }
 
 const titulo = document.querySelector('#digitando');
-ativarTitulo(titulo);
+ativarTitulo(titulo, ["Full-Stack Developer", "Game Developer"]);
+
+
 
 
 // Hidden NavBar ----------------------------------------------------------------
