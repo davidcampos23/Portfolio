@@ -21,7 +21,7 @@ module.exports = {
         bw: '0 0 0.5rem white',
       },
       width:{
-        project: '50rem',
+        project: '40rem',
         px472: '29.5rem',
         px976: '61rem'
       },
