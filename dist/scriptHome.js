@@ -106,3 +106,10 @@ function scrollToSection(event) {
 navItens.forEach((link) => {
     link.addEventListener("click", scrollToSection);
 });
+
+const ativarMenu = document.getElementById("buttonMenu");
+const navMenu = document.getElementById("navegacao")
+
+ativarMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('ativado')
+});

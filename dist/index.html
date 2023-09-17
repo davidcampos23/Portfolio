@@ -11,20 +11,22 @@
 <body>
     <!-- Cabeçalho -->
     <header id="navbar" class="bg-white top-0 sticky w-full navTrasm">
-        <nav class="flex items-center p-3 justify-around gap-3">
+        <nav class="flex items-center p-3 justify-around gap-3 tablet:justify-start">
             <img src="../img/darkmode.png" alt="darkmode" class="ml-8 w-10">
             <strong class="text-px40 text-second">David <span class="text-black">Campos</span></strong>
-            <ul class="flex ml-auto mr-12">
-                <li><strong><a href="#home">Home</strong></a></li>
-                <li><strong><a href="#skills">Skills</strong></a></li>
-                <li><strong><a href="#projects">Projects</strong></a></li>
-                <li><strong><a href="#contacts">Contact</strong></a></li>
+            <ul id="navegacao" class="flex ml-auto mr-12 tablet:hidden">
+                <li class="tablet:pl-0"><strong><a href="#Home">Home</strong></a></li>
+                <li class="tablet:pl-0"><strong><a href="#skills">Skills</strong></a></li>
+                <li class="tablet:pl-0"><strong><a href="#projects">Projects</strong></a></li>
+                <li class="tablet:pl-0"><strong><a href="#contacts">Contact</strong></a></li>
             </ul>
+            <img src="/img/menu_button_display-fotor-bg-remover-20230916213228.png" id="buttonMenu" class="hidden tablet:inline w-10 ml-auto mr-8">
         </nav>
+        
     </header>
 
     <!-- Home -->
-    <section id="home" class="bg-white grid grid-cols-2 justify-around items-center gap-16 p-16 shadow-bx">
+    <section id="Home" class="bg-white w-full grid grid-cols-2 justify-around items-center gap-16 p-16 shadow-bx tablet:bg-[url('/img/download.jpg')] tablet:bg-no-repeat tablet:bg-cover">
         <div class="mt-24 self-start grid gap-7 ml-8">
             <h2 class="text-px28">Hi There! I´m</h2>
             <h2 id="digitando" class="text-px48">Full-Stack Developer</h2>
@@ -34,7 +36,7 @@
                 <a href="" class="linkHome">Email</a>
             </div>
         </div>
-        <img src="..//img/download.jpg" alt="Retrato" class="w-96 h-96 max-w-full ml-40">
+        <img src="..//img/download.jpg" alt="Retrato" class="w-96 h-96 ml-40 tablet:hidden">
     </section>
 
     <!-- Skills -->

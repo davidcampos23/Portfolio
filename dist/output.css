@@ -592,6 +592,10 @@ video {
   margin-right: 15rem;
 }
 
+.mr-8{
+  margin-right: 2rem;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -714,10 +718,6 @@ video {
 
 .w-px976{
   width: 61rem;
-}
-
-.max-w-full{
-  max-width: 100%;
 }
 
 .grid-cols-2{
@@ -928,7 +928,7 @@ video {
 
 body{
   background-color: #EBEBEC;
-  max-width: 1920px;
+  /* max-width: 1920px; */
   margin: 0 auto;
 }
 
@@ -979,6 +979,24 @@ h2{
 p{
   font-family: 'Inter', sans-serif;
   font-weight: 200;
+}
+
+#navegacao.ativado{
+  background: linear-gradient(rgba(255, 255, 255, 0.777), rgba(255, 255, 255, 0.333));
+  width: 150px;
+  position: absolute;
+  display: grid;
+  top: 83px;
+  z-index: 10;
+  padding: 30px;
+  gap: 16px;
+  font-weight: bold;
+  border-radius: 0 0 4px 4px;
+  margin-right: 0px;
+  right: 0px;
+  text-align: end;
+  justify-content: center;
+  animation: inicializar .9s ease-in-out forwards;
 }
 
 .imgProject{
@@ -1078,5 +1096,35 @@ p{
   to{
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 984px){
+  .tablet\:inline{
+    display: inline;
+  }
+
+  .tablet\:hidden{
+    display: none;
+  }
+
+  .tablet\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .tablet\:bg-\[url\(\'\/img\/download\.jpg\'\)\]{
+    background-image: url('/img/download.jpg');
+  }
+
+  .tablet\:bg-cover{
+    background-size: cover;
+  }
+
+  .tablet\:bg-no-repeat{
+    background-repeat: no-repeat;
+  }
+
+  .tablet\:pl-0{
+    padding-left: 0px;
   }
 }

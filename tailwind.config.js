@@ -3,6 +3,9 @@ module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
     extend: {
+      screens:{
+        'tablet':{'max': '984px'}
+      },
       colors:{
         primary: '#EBEBEC',
         second: '#FFB3B3',

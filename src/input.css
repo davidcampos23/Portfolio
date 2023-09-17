@@ -15,7 +15,7 @@
 
 body{
     background-color: #EBEBEC;
-    max-width: 1920px;
+    /* max-width: 1920px; */
     margin: 0 auto;
 }
 
@@ -65,6 +65,24 @@ h2{
 p{
     font-family: 'Inter', sans-serif;
     font-weight: 200;
+}
+
+#navegacao.ativado{
+    background: linear-gradient(rgba(255, 255, 255, 0.777), rgba(255, 255, 255, 0.333));
+    width: 150px;
+    position: absolute;
+    display: grid;
+    top: 83px;
+    z-index: 10;
+    padding: 30px;
+    gap: 16px;
+    font-weight: bold;
+    border-radius: 0 0 4px 4px;
+    margin-right: 0px;
+    right: 0px;
+    text-align: end;
+    justify-content: center;
+    animation: inicializar .9s ease-in-out forwards;
 }
 
 .imgProject{
