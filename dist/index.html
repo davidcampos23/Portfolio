@@ -21,8 +21,7 @@
                 <li class="tablet:pl-0"><strong><a href="#contacts">Contact</strong></a></li>
             </ul>
             <img src="/img/menu_button_display-fotor-bg-remover-20230916213228.png" id="buttonMenu" class="hidden tablet:inline w-10 ml-auto mr-8">
-        </nav>
-        
+        </nav>     
     </header>
 
     <!-- Home -->
@@ -30,10 +29,9 @@
         <div class="mt-24 self-start grid gap-7 ml-8">
             <h2 class="text-px28">Hi There! I´m</h2>
             <h2 id="digitando" class="text-px48">Full-Stack Developer</h2>
-            <p class="text-px32 text-justify">Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+            <p class="text-px32 text-justify">Minha paixão pela tecnologia impulsiona meu trabalho em desenvolvimento web e automação, estou sempre em busca de aprimoramento constante.</p>
             <div class="mt-8">
                 <a href="" class="linkHome">Download CV</a>   
-                <a href="" class="linkHome">Email</a>
             </div>
         </div>
         <img src="..//img/download.jpg" alt="Retrato" class="w-96 h-96 ml-40 tablet:hidden">
@@ -50,7 +48,7 @@
                 <div class="bg-second w-5 h-5 rounded-full"></div>
                 <div class="bg-second w-5 h-5 rounded-full"></div>
         </div>
-        <div class="grid grid-cols-5 gap-6 m-14 mt-24 mr-60 ml-60 items-center justify-around justify-items-center">
+        <div class="grid grid-cols-5 gap-6 mt-24 items-center justify-items-center justify-around tablet:grid-cols-3 mobile:grid-cols-2">
             <div class="imgSkills">
                 <img class="w-28 h-28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
                 <strong class="mt-2">CSharp</strong>
@@ -113,8 +111,8 @@
     </section>
     
     <!-- Projects -->
-    <section id="projects" class="bg-white w-full shadow-bw">
-        <div class="text-center mt-52">
+    <section id="projects" class="bg-white w-full shadow-bw pb-24">
+        <div class="text-center mt-44">
             <h3><strong class="text-px48 text-second">Projects</strong></h3>
             <p class="-mt-2 mb-3 text-xl text-op5">See My Works</p>
             <div class="flex gap-2 justify-center">
@@ -123,10 +121,10 @@
                 <div class="bg-second w-5 h-5 rounded-full"></div>
                 <div class="bg-second w-5 h-5 rounded-full"></div>
         </div>
-        <div class="px-48 mt-24"> <!-- Lista Projetos -->
-                <div class="w-full flex justify-between"> <!-- Projeto 1 -->
+        <div class="mx-auto px-4 mt-24 tablet:hidden"> <!-- Lista Projetos -->
+                <div class="w-full flex justify-center"> <!-- Projeto 1 -->
                     <img class="imgProject w-project h-project rounded-md" src="../img/projects/ToDoList.png" alt="imagem to do list">
-                    <div class="w-1/2 text-start">
+                    <div class="ml-4 w-1/2 text-start">
                         <h4 class="text-px32">To-Do List</h4>
                         <p class="text-px24 mt-3 text-justify">
                             Projeto de um gerenciador de tarefas baseado na metodologia ágil Kanban, desenvolvido em uma aplicação Windows Form com uso da linguagem C#.
@@ -142,10 +140,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full flex justify-between mt-32"> <!-- Projeto 2 -->       
-                    <div class="w-1/2 text-end">
+                <div class="w-full flex justify-center mt-32"> <!-- Projeto 2 -->       
+                    <div class="mr-4 w-1/2 text-end">
                         <h4 class="text-px32">Daily News</h4>
-                        <p class="text-px24 mt-3 text-right">
+                        <p class="text-px24  mt-3 text-right">
                             Site que mostra as notícias mais visuakizadas do dia no site do New York Times. Desenvolvido em Vite com template de React, através do método Get a API do NYT retornar os artigos, notícias e a seção de capa.
                         </p>
                         <div class="text-px24 mt-6">
@@ -161,9 +159,9 @@
                     </div>
                     <img class="imgProject imgProjectR w-project h-project rounded-md" src="../img/projects/DailyNews.png" alt="imagem to do list">
                 </div>
-                <div class="w-full flex justify-between mt-32"> <!-- Projeto 3 -->
+                <div class="w-full flex justify-center mt-32"> <!-- Projeto 3 -->
                     <img class="imgProject w-project h-project rounded-md mb-10" src="../img/projects/TrpgBot.png" alt="imagem to do list">
-                    <div class="w-1/2 text-start">
+                    <div class="ml-4 w-1/2 text-start">
                         <h4 class="text-px32">TRPG Lib - Discord Bot</h4>
                         <p class="text-px24 mt-3 text-justify">
                             Landing Page em React, sobre bot de Discord desenvolvido em C#. O bot realiza uma conexão com um banco de dados, onde ele retorna valores de pesquisa resultantes de comandos digitados no prompty do discord.
@@ -182,6 +180,97 @@
                     
                 </div>
         </div>
+        <div id="CarrosselProjetos" class="hidden tablet:block mt-16 mx-auto w-[900px] h-[500px] overflow-hidden fundo mobile:w-[600px]"> <!-- Carrossel Projetos -->
+            <div class="w-pc400 mt-[10px] ml-3 h-slideProj flex">
+                <!-- Radio Buttons -->
+                <input type="radio" name="radio-btn" id="radio1" class="hidden">
+                <input type="radio" name="radio-btn" id="radio2" class="hidden">
+                <input type="radio" name="radio-btn" id="radio3" class="hidden">
+                
+                <!-- Slide Imagens -->
+                <div class="w-1/4 relative first duration-[2000ms]"> <!-- Projeto 1 -->
+                    <div class="w-[880px] h-slideProj flex mobile:w-[580px]">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="hidden mobile:block">
+                            <img src="/img/projects/ToDoList.png" alt="imgToDoList" class="w-2/3 h-full mobile:w-full">
+                        </a>
+                        <div class="w-1/3 h-slideProj p-2 text-start mobile:hidden">
+                            <h4 class="text-px32">To-Do List</h4>
+                            <p class="text-px24 mt-3 text-justify">
+                                Projeto de gerenciador de tarefas baseado na metodologia ágil Kanban, desenvolvido em uma aplicação Windows Form com uso da linguagem C#.
+                            </p>
+                            <div class="text-px24 mt-6">
+                                <span class="bg-gray-400 pr-2 pl-2 rounded-md text-white ">C#</span>
+                                <span class="bg-gray-400 pr-2 pl-2 rounded-md text-white ">SQLite</span>
+                                <span class="bg-gray-400 pr-2 pl-2 rounded-md text-white ">WPF</span>
+                            </div>
+                            <div class="text-px24 mt-14">
+                                <a href="https://github.com/davidcampos23/GerenciadorDeTarefas" target="_blank" rel="noreferrer noopener"><button class="bg-primary w-32 h-9">GitHub</button></a>
+                                <a href="../src/projetcs/To-Do List.zip" download="Download-File To-do List"><button class="bg-second w-32 h-9">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/4 relative duration-[2000ms]"> <!-- Projeto 2 -->
+                    <div class="w-[880px] h-slideProj flex mobile:w-[580px]">
+                        <a href="https://dailyn-news.netlify.app/" target="_blank" rel="noopener noreferrer" class="hidden mobile:block">
+                            <img src="/img/projects/DailyNews.png" alt="imgToDoList" class="w-2/3 h-full mobile:w-full">
+                        </a>
+                        <div class="w-1/3 h-slideProj p-2 text-start mobile:hidden">
+                            <h4 class="text-px32">Daily News</h4>
+                            <p class="text-px24 mt-3 text-justify">
+                                Notícias do dia mais visualizadas no New York Times. Desenvolvido em Vite com template de React, utilizando API do NYT.
+                            </p>
+                            <div class="text-px24 mt-6">
+                                <span class="bg-gray-400 pr-2 pl-2 rounded-md text-white ">React Js</span>
+                                <span class="bg-gray-400 pr-2 pl-2 rounded-md text-white ">NYT API</span>
+                                <span class="bg-gray-400 pr-2 pl-2 rounded-md text-white ">Vite</span>
+                                <span class="bg-gray-400 pr-2 pl-2 rounded-md text-white ">Tailwind CSS</span>
+                            </div>
+                            <div class="text-px24 mt-14">
+                                <a href="https://github.com/davidcampos23/GerenciadorDeTarefas" target="_blank" rel="noreferrer noopener"><button class="bg-primary w-32 h-9">GitHub</button></a>
+                                <a href="../src/projetcs/To-Do List.zip" download="Download-File To-do List"><button class="bg-second w-32 h-9">Visualizar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/4 relative duration-[2000ms]"> <!-- Projeto 3 -->
+                    <div class="w-[880px] h-slideProj flex mobile:w-[580px]">
+                        <a href="https://landing-page-trpg-bot.netlify.app/ " target="_blank" rel="noopener noreferrer" class="hidden mobile:block">
+                            <img src="/img/projects/TrpgBot.png" alt="imgToDoList" class="w-2/3 h-full mobile:w-full">
+                        </a>
+                        <div class="w-1/3 h-slideProj p-2 text-start mobile:hidden">
+                            <h4 class="text-px32">TRPG Lib - Discord Bot</h4>
+                            <p class="text-px24 mt-3 text-justify">
+                                bot de Discord desenvolvido em C#. O bot retorna valores resultantes de comandos no prompty.
+                            </p>
+                            <div class="text-px24 mt-4">
+                                <span class="bg-gray-400 pr-2 pl-2 rounded-md text-white ">C#</span>
+                                <span class="bg-gray-400 pr-2 pl-2 rounded-md text-white ">SQLite</span>
+                                <span class="bg-gray-400 pr-2 pl-2 rounded-md text-white ">Discord App</span>
+                                <span class="bg-gray-400 pr-2 pl-2 rounded-md text-white ">React</span>
+                            </div>
+                            <div class="text-px24 mt-14">
+                                <a href="https://github.com/davidcampos23/GerenciadorDeTarefas" target="_blank" rel="noreferrer noopener"><button class="bg-primary w-32 h-9">GitHub</button></a>
+                                <a href="../src/projetcs/To-Do List.zip" download="Download-File To-do List"><button class="bg-second w-32 h-9">Visualizar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation auto -->
+                <div class="nav-Auto absolute w-px976 mt-[440px] flex justify-center">
+                    <div class="auto-btn1 border-2 border-solid border-second p-1 rounded-lg cursor-pointer duration-1000 mr-10"></div>
+                    <div class="auto-btn2 border-2 border-solid border-second p-1 rounded-lg cursor-pointer duration-1000 mr-10"></div>
+                    <div class="auto-btn3 border-2 border-solid border-second p-1 rounded-lg cursor-pointer duration-1000"></div>
+                </div>
+            </div>
+
+            <div class="absolute w-px976 -mt-10 ml-3 flex justify-center">
+                <label for="radio1" class="p-1 border-2 border-solid border-white rounded-lg cursor-pointer hover:bg-white duration-1000 mr-10"></label>
+                <label for="radio2" class="p-1 border-2 border-solid border-white rounded-lg cursor-pointer hover:bg-white duration-1000 mr-10"></label>
+                <label for="radio3" class="p-1 border-2 border-solid border-white rounded-lg cursor-pointer hover:bg-white duration-1000 "></label>
+            </div>
+        </div>
     </section>
     
     <!-- Contacts -->
@@ -196,36 +285,28 @@
                 <div class="bg-second w-5 h-5 rounded-full"></div>
         </div>
         <div class="flex justify-center mt-10 mb-16">
-            <form action="https://formsubmit.co/davidcamposg23@gmail.com" method="post" class="w-px976 flex flex-col gap-3">
+            <form action="https://formsubmit.co/davidcamposg23@gmail.com" method="post" class="w-px976 flex flex-col gap-3 tablet:w-full">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_autoresponse" value="Recebi sua mensagem, obrigado pelo contato e logo responderei!">
-                <div class="flex justify-between">
-                    <input type="text" name="name" placeholder="Your Name" class="w-px472 h-px89 p-3 text-px28 shadow-sm">
-                    <input type="email" name="email" placeholder="Your Email Address" class="w-px472 h-px89 p-3 text-px28 shadow-sm">
+                <div class="flex justify-between w-full tablet:inline">
+                    <input type="text" name="name" placeholder="Your Name" class="w-px472 h-px89 p-3 text-px28 shadow-sm tablet:w-10/12 tablet:mb-3">
+                    <input type="email" name="email" placeholder="Your Email Address" class="w-px472 h-px89 p-3 text-px28 shadow-sm tablet:w-10/12">
                 </div>
-                <input type="text" name="subject" placeholder="Subject" class="w-px976 h-px89 p-3 text-px28 shadow-sm">
-                <textarea name="message" rows="8" placeholder="How can i help you?" class="p-3 text-px28 shadow-sm"></textarea>
-                <button type="submit" class="bg-white w-60 h-px89 mt-5 m-auto text-px28 rounded-md shadow-sm"><strong class="text-second">Contact Now</strong></button>
+                <div class="tablet:w-full tablet:justify-center">
+                    <input type="text" name="subject" placeholder="Subject" class="w-px976 h-px89 p-3 text-px28 shadow-sm tablet:w-10/12 ">
+                </div>
+                <div class="w-full tablet:justify-center">
+                    <textarea name="message" rows="8" placeholder="How can i help you?" class="w-px976 p-3 text-px28 shadow-sm tablet:w-10/12"></textarea>
+                </div>
+                    <button type="submit" class="bg-white w-60 h-px89 mt-5 m-auto text-px28 rounded-md shadow-sm"><strong class="text-second">Contact Now</strong></button>
             </form>
         </div>
 
-        <footer class="bg-white grid grid-cols-4 items-center justify-around p-3 g-3 shadow-md">
-            <div class="flex flex-col items-center">
-                <a href="https://web.whatsapp.com/send?phone=5531972398514" target="_blank" rel="noreferrer noopener"><img src="../img/footer/telefone.png" alt="imagem tel" class="w-14"></a>
-                <a href="https://web.whatsapp.com/send?phone=5531972398514" target="_blank" rel="noreferrer noopener" ><div>(+55) 31 97239-8514</div></a>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="../img/footer/email.png" alt="imagem email" class="w-14 copy">
-                <div id="CopyMail" class="copy">davidcamposg23@gmail.com</div>
-            </div>
-            <div class="flex flex-col items-center">
-                <a href="https://linkedin.com/in/DavidCampos23" target="_blank" rel="noreferrer noopener"><img src="../img/footer/linkedin.png" alt="imagem linkedin" class="w-14"></a>
-                <a href="https://linkedin.com/in/DavidCampos23" target="_blank" rel="noreferrer noopener"><div>linkedin.com/in/DavidCampos23</div></a>
-            </div>
-            <div class="flex flex-col items-center">
-                <a href="https://github.com/davidcampos23" target="_blank" rel="noreferrer noopener"><img src="../img/footer/github.png" alt="imagem github" class="w-14"></a>
-                <a href="https://github.com/davidcampos23" target="_blank" rel="noreferrer noopener"><div>github.com/davidcampos23</div></a>
-            </div>
+        <footer class="bg-white flex justify-center p-3 shadow-md">
+            <a href="https://web.whatsapp.com/send?phone=5531972398514" target="_blank" rel="noreferrer noopener"><img src="../img/footer/telefone.png" alt="imagem tel" class="w-14 mr-4"></a>
+            <img src="../img/footer/email.png" alt="imagem email" class="w-14 copy mr-4">
+            <a href="https://linkedin.com/in/DavidCampos23" target="_blank" rel="noreferrer noopener"><img src="../img/footer/linkedin.png" alt="imagem linkedin" class="w-14 mr-4"></a>
+            <a href="https://github.com/davidcampos23" target="_blank" rel="noreferrer noopener"><img src="../img/footer/github.png" alt="imagem github" class="w-14"></a>
         </footer>
     </section>
 </body>

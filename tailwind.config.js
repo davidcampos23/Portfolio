@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       screens:{
-        'tablet':{'max': '984px'}
+        'tablet':{'max': '1200px'},
+        'mobile':{'max': '900px'}
       },
       colors:{
         primary: '#EBEBEC',
@@ -22,17 +23,20 @@ module.exports = {
       boxShadow:{
         bx: '0 0 1rem white',
         bw: '0 0 0.5rem white',
+        bb: '0 0 0.5rem #EBEBEC',
       },
       width:{
         project: '40rem',
         px472: '29.5rem',
-        px976: '61rem'
+        px976: '61rem',
+        pc400: '400%',
       },
       height:{
         navH: 'var(--nav-height)',
         project: '25rem',
+        slideProj: '30rem',
         px89: '5.5rem'
-      }
+      },
     },
   },
   plugins: [],

@@ -19,6 +19,11 @@ body{
     margin: 0 auto;
 }
 
+.fundo{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.777), rgba(255, 255, 255, 0.333));
+    @apply bg-primary shadow-bb
+}
+
 header{
     z-index: 2;
 }
@@ -175,4 +180,29 @@ p{
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+}
+
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio1:checked ~ .nav-Auto .auto-btn1{
+    @apply bg-second border-second z-[1];
+}
+
+#radio2:checked ~ .nav-Auto .auto-btn2{
+    @apply bg-second border-second z-[1];
+}
+
+#radio3:checked ~ .nav-Auto .auto-btn3{
+    @apply bg-second border-second z-[1];
 }
