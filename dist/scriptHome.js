@@ -1,3 +1,40 @@
+// Dark Mode
+var dark = false;
+const imgDark = document.getElementById('imgDarkmode');
+const imgGitHub = document.getElementById('imgGitHub');
+imgDark.addEventListener("click", () => {
+    if(dark == false)
+    {
+        dark = true;
+        ativarDark(dark);
+    }
+    else
+    {
+        dark = false;
+        ativarDark(dark);;
+    }
+})
+
+function ativarDark(cond)
+{
+    if(cond)
+    {
+        const classDark = document.querySelector('html')
+        classDark.classList.add('dark');
+        imgDark.src = "img/darkmodeWhite.png";
+        imgGitHub.src = "img/footer/githubDark.png";
+    }
+    else
+    {
+        const classDark = document.querySelector('html')
+        classDark.classList.remove('dark');
+        imgDark.src = "img/darkmode.png";
+        imgGitHub.src = "img/footer/github.png"
+    }
+}
+
+
+
 // Escrever Text --------------------------------------------------------------
 function ativarTitulo(element, textToWrite) {
     const typingSpeed = 75;
@@ -67,7 +104,14 @@ addEventListener("scroll", () =>{
 
         if (sectionTop <= windowCenter && sectionBottom >= windowCenter) {
             navLinks.forEach(link => {
-                link.style.color = 'black'; // Resetar as cores dos links
+                if(dark)
+                {
+                    link.style.color = 'white'; // Resetar as cores dos links
+                }
+                else
+                {
+                    link.style.color = 'black';
+                }
             });
 
             // Define a cor do link da navbar correspondente à seção atual

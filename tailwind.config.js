@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./dist/*.{html,js}"],
+  darkMode: 'class',
   theme: {
     extend: {
       screens:{
@@ -11,7 +12,11 @@ module.exports = {
         primary: '#EBEBEC',
         second: '#FFB3B3',
         op5: 'rgba(0,0,0, 0.5)',
-        stacks: '#70c3e1'
+        stacks: '#70c3e1',
+        primaryDK: '#161616',
+        secondDK: '#323232',
+        skillsDK: '#2B2B2B',
+        textDKc: 'rgba(255, 255, 255, 0.60)',
       },
       fontSize:{
         px24: '1.5rem',
@@ -24,6 +29,9 @@ module.exports = {
         bx: '0 0 1rem white',
         bw: '0 0 0.5rem white',
         bb: '0 0 0.5rem #EBEBEC',
+        darkBw: '0 0 0.5rem black',
+        darkBx: '0 0 1rem black',
+        darkBb: '0 0 0.5rem gray',
       },
       width:{
         project: '40rem',

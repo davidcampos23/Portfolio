@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,30 +8,30 @@
     <script src="./scriptHome.js" defer></script>
     <script src="./script.js" defer></script>
 </head>
-<body>
+<body class="dark:bg-secondDK">
     <!-- Cabeçalho -->
-    <header id="navbar" class="bg-white top-0 sticky w-full navTrasm">
+    <header id="navbar" class="bg-white top-0 sticky w-full navTrasm dark:bg-primaryDK">
         <nav class="flex items-center p-3 justify-around gap-3 tablet:justify-start">
-            <img src="img/darkmode.png" alt="darkmode" class="ml-8 w-10">
-            <strong class="text-px40 text-second">David <span class="text-black">Campos</span></strong>
+            <img id="imgDarkmode" src="img/darkmode.png" alt="darkmode" class="ml-8 w-10">
+            <strong class="text-px40 text-second">David <span class="text-black dark:text-white">Campos</span></strong>
             <ul id="navegacao" class="flex ml-auto mr-12 tablet:hidden">
-                <li class="tablet:pl-0"><strong><a href="#Home">Home</strong></a></li>
-                <li class="tablet:pl-0"><strong><a href="#skills">Skills</strong></a></li>
-                <li class="tablet:pl-0"><strong><a href="#projects">Projects</strong></a></li>
-                <li class="tablet:pl-0"><strong><a href="#contacts">Contact</strong></a></li>
+                <li class="tablet:pl-0"><strong><a href="#Home" class="dark:text-white">Home</strong></a></li>
+                <li class="tablet:pl-0"><strong><a href="#skills" class="dark:text-white">Skills</strong></a></li>
+                <li class="tablet:pl-0"><strong><a href="#projects" class="dark:text-white">Projects</strong></a></li>
+                <li class="tablet:pl-0"><strong><a href="#contacts" class="dark:text-white">Contact</strong></a></li>
             </ul>
             <img src="img/menu_button_display-fotor-bg-remover-20230916213228.png" id="buttonMenu" class="hidden tablet:inline w-10 ml-auto mr-8">
         </nav>     
     </header>
 
     <!-- Home -->
-    <section id="Home" class="bg-white w-full grid grid-cols-2 justify-around items-center gap-16 p-16 shadow-bx tablet:bg-[url('img/download.jpg')] tablet:bg-no-repeat tablet:bg-cover">
+    <section id="Home" class="bg-white w-full grid grid-cols-2 justify-around items-center gap-16 p-16 shadow-bx tablet:bg-[url('img/download.jpg')] tablet:bg-no-repeat tablet:bg-cover dark:bg-primaryDK dark:shadow-darkBx">
         <div class="mt-24 self-start grid gap-7 ml-8">
-            <h2 class="text-px28">Hi There! I´m</h2>
-            <h2 id="digitando" class="text-px48">Full-Stack Developer</h2>
-            <p class="text-px32 text-justify">Minha paixão pela tecnologia impulsiona meu trabalho em desenvolvimento web e automação, estou sempre em busca de aprimoramento constante.</p>
+            <h2 class="text-px28 dark:text-white">Hi There! I´m</h2>
+            <h2 id="digitando" class="text-px48 dark:text-white">Full-Stack Developer</h2>
+            <p class="text-px32 text-justify dark:text-textDKc">Minha paixão pela tecnologia impulsiona meu trabalho em desenvolvimento web e automação, estou sempre em busca de aprimoramento constante.</p>
             <div class="mt-8">
-                <a href="" class="linkHome">Download CV</a>   
+                <a href="" class="linkHome dark:text-white dark:border-white">Download CV</a>   
             </div>
         </div>
         <img src="img/download.jpg" alt="Retrato" class="w-96 h-96 ml-40 tablet:hidden">
@@ -41,7 +41,7 @@
     <section id="skills">
         <div class="text-center mt-14">
             <h3><strong class="text-px48 text-second">Skills</strong></h3>
-            <p class="-mt-2 mb-3 text-xl text-op5">Hardwere Skills</p>
+            <p class="-mt-2 mb-3 text-xl text-op5 dark:text-textDKc">Hardwere Skills</p>
             <div class="flex gap-2 justify-center">
                 <div class="bg-second w-5 h-5 rounded-full"></div>
                 <div class="bg-second w-5 h-5 rounded-full"></div>
@@ -49,61 +49,61 @@
                 <div class="bg-second w-5 h-5 rounded-full"></div>
         </div>
         <div class="grid grid-cols-5 gap-6 mt-24 items-center justify-items-center justify-around tablet:grid-cols-3 mobile:grid-cols-2">
-            <div class="imgSkills">
+            <div class="imgSkills dark:bg-skillsDK dark:shadow-darkBw">
                 <img class="w-28 h-28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
-                <strong class="mt-2">CSharp</strong>
+                <strong class="mt-2 dark:text-white">CSharp</strong>
             </div>
-            <div class="imgSkills">
+            <div class="imgSkills dark:bg-skillsDK dark:shadow-darkBw">
                 <img class="w-28 h-28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
-                <strong class="mt-2">Dotnet</strong>   
+                <strong class="mt-2 dark:text-white">Dotnet</strong>   
             </div>
-            <div class="imgSkills">
+            <div class="imgSkills dark:bg-skillsDK dark:shadow-darkBw">
                 <img class="w-28 h-28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" />
-                <strong class="mt-2">Unity</strong>   
+                <strong class="mt-2 dark:text-white">Unity</strong>   
             </div>
-            <div class="imgSkills">
+            <div class="imgSkills dark:bg-skillsDK dark:shadow-darkBw">
                 <img class="w-28 h-28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                <strong class="mt-2">Html</strong>  
+                <strong class="mt-2 dark:text-white">Html</strong>  
             </div>
-            <div class="imgSkills">        
+            <div class="imgSkills dark:bg-skillsDK dark:shadow-darkBw">        
                 <img class="w-28 h-28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                <strong class="mt-2">Javascript</strong>
+                <strong class="mt-2 dark:text-white">Javascript</strong>
             </div>
-            <div class="imgSkills">
+            <div class="imgSkills dark:bg-skillsDK dark:shadow-darkBw">
                 <img class="w-28 h-28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                <strong class="mt-2">Css</strong>  
+                <strong class="mt-2 dark:text-white">Css</strong>  
             </div>
-            <div class="imgSkills">
+            <div class="imgSkills dark:bg-skillsDK dark:shadow-darkBw">
                 <img class="w-28 h-28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-                <strong class="mt-2">Git</strong>
+                <strong class="mt-2 dark:text-white">Git</strong>
             </div>
-            <div class="imgSkills">
+            <div class="imgSkills dark:bg-skillsDK dark:shadow-darkBw">
                 <img class="w-28 h-28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
-                <strong class="mt-2">Tailwind</strong>
+                <strong class="mt-2 dark:text-white">Tailwind</strong>
             </div>
-            <div class="imgSkills">
+            <div class="imgSkills dark:bg-skillsDK dark:shadow-darkBw">
                 <img class="w-28 h-28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
-                <strong class="mt-2">Mysql</strong>
+                <strong class="mt-2 dark:text-white">Mysql</strong>
             </div>
-            <div class="imgSkills">
+            <div class="imgSkills dark:bg-skillsDK dark:shadow-darkBw">
                 <img class="w-28 h-28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" />
-                <strong class="mt-2">SQLite</strong>
+                <strong class="mt-2 dark:text-white">SQLite</strong>
             </div>
-            <div class="imgSkills">
+            <div class="imgSkills dark:bg-skillsDK dark:shadow-darkBw">
                 <img class="w-28 h-28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-                <strong class="mt-2">GitHub</strong>
+                <strong class="mt-2 dark:text-white">GitHub</strong>
             </div>
-            <div class="imgSkills">
+            <div class="imgSkills dark:bg-skillsDK dark:shadow-darkBw">
                 <img class="w-28 h-28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-                <strong class="mt-2">Python</strong>
+                <strong class="mt-2 dark:text-white">Python</strong>
             </div>
-            <div class="imgSkills">
+            <div class="imgSkills dark:bg-skillsDK dark:shadow-darkBw">
                 <img class="w-28 h-28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-                <strong class="mt-2">React</strong>
+                <strong class="mt-2 dark:text-white">React</strong>
             </div>
-            <div class="imgSkills">
+            <div class="imgSkills dark:bg-skillsDK dark:shadow-darkBw">
                 <img class="w-28 h-28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
-                <strong class="mt-2">Figma</strong>
+                <strong class="mt-2 dark:text-white">Figma</strong>
             </div>
 
         </div>
@@ -111,10 +111,10 @@
     </section>
     
     <!-- Projects -->
-    <section id="projects" class="bg-white w-full shadow-bw pb-24">
+    <section id="projects" class="bg-white w-full shadow-bw pb-24 dark:bg-primaryDK dark:shadow-darkBw">
         <div class="text-center mt-44">
             <h3><strong class="text-px48 text-second">Projects</strong></h3>
-            <p class="-mt-2 mb-3 text-xl text-op5">See My Works</p>
+            <p class="-mt-2 mb-3 text-xl text-op5 dark:text-textDKc">See My Works</p>
             <div class="flex gap-2 justify-center">
                 <div class="bg-second w-5 h-5 rounded-full"></div>
                 <div class="bg-second w-5 h-5 rounded-full"></div>
@@ -125,8 +125,8 @@
                 <div class="w-full flex justify-center"> <!-- Projeto 1 -->
                     <img class="imgProject w-project h-project rounded-md" src="img/projects/ToDoList.png" alt="imagem to do list">
                     <div class="ml-4 w-1/2 text-start">
-                        <h4 class="text-px32">To-Do List</h4>
-                        <p class="text-px24 mt-3 text-justify">
+                        <h4 class="text-px32 dark:text-white">To-Do List</h4>
+                        <p class="text-px24 mt-3 text-justify dark:text-textDKc">
                             Projeto de um gerenciador de tarefas baseado na metodologia ágil Kanban, desenvolvido em uma aplicação Windows Form com uso da linguagem C#.
                         </p>
                         <div class="text-px24 mt-6">
@@ -142,8 +142,8 @@
                 </div>
                 <div class="w-full flex justify-center mt-32"> <!-- Projeto 2 -->       
                     <div class="mr-4 w-1/2 text-end">
-                        <h4 class="text-px32">Daily News</h4>
-                        <p class="text-px24  mt-3 text-right">
+                        <h4 class="text-px32 dark:text-white">Daily News</h4>
+                        <p class="text-px24  mt-3 text-right dark:text-textDKc">
                             Site que mostra as notícias mais visuakizadas do dia no site do New York Times. Desenvolvido em Vite com template de React, através do método Get a API do NYT retornar os artigos, notícias e a seção de capa.
                         </p>
                         <div class="text-px24 mt-6">
@@ -162,8 +162,8 @@
                 <div class="w-full flex justify-center mt-32"> <!-- Projeto 3 -->
                     <img class="imgProject w-project h-project rounded-md mb-10" src="img/projects/TrpgBot.png" alt="imagem to do list">
                     <div class="ml-4 w-1/2 text-start">
-                        <h4 class="text-px32">TRPG Lib - Discord Bot</h4>
-                        <p class="text-px24 mt-3 text-justify">
+                        <h4 class="text-px32 dark:text-white">TRPG Lib - Discord Bot</h4>
+                        <p class="text-px24 mt-3 text-justify dark:text-textDKc">
                             Landing Page em React, sobre bot de Discord desenvolvido em C#. O bot realiza uma conexão com um banco de dados, onde ele retorna valores de pesquisa resultantes de comandos digitados no prompty do discord.
                         </p>
                         <div class="text-px24 mt-6">
@@ -180,7 +180,7 @@
                     
                 </div>
         </div>
-        <div id="CarrosselProjetos" class="hidden tablet:block mt-16 mx-auto w-[900px] h-[500px] overflow-hidden fundo mobile:w-[600px]"> <!-- Carrossel Projetos -->
+        <div id="CarrosselProjetos" class="hidden tablet:block mt-16 mx-auto w-[900px] h-[500px] overflow-hidden fundo mobile:w-[600px] dark:bg-secondDK dark:shadow-darkBb"> <!-- Carrossel Projetos -->
             <div class="w-pc400 mt-[10px] ml-3 h-slideProj flex">
                 <!-- Radio Buttons -->
                 <input type="radio" name="radio-btn" id="radio1" class="hidden">
@@ -277,7 +277,7 @@
     <section id="contacts">
         <div class="text-center mt-24">
             <h3><strong class="text-px48 text-second">Contacts</strong></h3>
-            <p class="-mt-2 mb-3 text-xl text-op5">How to Help</p>
+            <p class="-mt-2 mb-3 text-xl text-op5 dark:text-textDKc">How to Help</p>
             <div class="flex gap-2 justify-center">
                 <div class="bg-second w-5 h-5 rounded-full"></div>
                 <div class="bg-second w-5 h-5 rounded-full"></div>
@@ -289,24 +289,24 @@
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_autoresponse" value="Recebi sua mensagem, obrigado pelo contato e logo responderei!">
                 <div class="flex justify-between w-full tablet:inline">
-                    <input type="text" name="name" placeholder="Your Name" class="w-px472 h-px89 p-3 text-px28 shadow-sm tablet:w-10/12 tablet:mb-3">
-                    <input type="email" name="email" placeholder="Your Email Address" class="w-px472 h-px89 p-3 text-px28 shadow-sm tablet:w-10/12">
+                    <input type="text" name="name" placeholder="Your Name" class="w-px472 h-px89 p-3 text-px28 shadow-sm tablet:w-10/12 tablet:mb-3 dark:bg-skillsDK">
+                    <input type="email" name="email" placeholder="Your Email Address" class="w-px472 h-px89 p-3 text-px28 shadow-sm tablet:w-10/12 dark:bg-skillsDK">
                 </div>
                 <div class="tablet:w-full tablet:justify-center">
-                    <input type="text" name="subject" placeholder="Subject" class="w-px976 h-px89 p-3 text-px28 shadow-sm tablet:w-10/12 ">
+                    <input type="text" name="subject" placeholder="Subject" class="w-px976 h-px89 p-3 text-px28 shadow-sm tablet:w-10/12 dark:bg-skillsDK">
                 </div>
                 <div class="w-full tablet:justify-center">
-                    <textarea name="message" rows="8" placeholder="How can i help you?" class="w-px976 p-3 text-px28 shadow-sm tablet:w-10/12"></textarea>
+                    <textarea name="message" rows="8" placeholder="How can i help you?" class="w-px976 p-3 text-px28 shadow-sm tablet:w-10/12 dark:bg-skillsDK"></textarea>
                 </div>
-                    <button type="submit" class="bg-white w-60 h-px89 mt-5 m-auto text-px28 rounded-md shadow-sm"><strong class="text-second">Contact Now</strong></button>
+                    <button type="submit" class="bg-white w-60 h-px89 mt-5 m-auto text-px28 rounded-md shadow-sm dark:bg-skillsDK"><strong class="text-second">Contact Now</strong></button>
             </form>
         </div>
 
-        <footer class="bg-white flex justify-center p-3 shadow-md">
+        <footer class="bg-white flex justify-center p-3 shadow-md dark:bg-primaryDK">
             <a href="https://web.whatsapp.com/send?phone=5531972398514" target="_blank" rel="noreferrer noopener"><img src="img/footer/telefone.png" alt="imagem tel" class="w-14 mr-4"></a>
             <img src="img/footer/email.png" alt="imagem email" class="w-14 copy mr-4">
             <a href="https://linkedin.com/in/DavidCampos23" target="_blank" rel="noreferrer noopener"><img src="img/footer/linkedin.png" alt="imagem linkedin" class="w-14 mr-4"></a>
-            <a href="https://github.com/davidcampos23" target="_blank" rel="noreferrer noopener"><img src="img/footer/github.png" alt="imagem github" class="w-14"></a>
+            <a href="https://github.com/davidcampos23" target="_blank" rel="noreferrer noopener"><img id="imgGitHub" src="img/footer/github.png" alt="imagem github" class="w-14"></a>
         </footer>
     </section>
 </body>
