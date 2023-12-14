@@ -15,13 +15,12 @@ function nextImage(){
 }
 
 // Script Footer
-const copy = document.getElementById("CopyMail");
 const linkCopy = document.querySelectorAll('.copy');
 
 function Copiar(){   
     
-    navigator.clipboard.writeText(copy.innerText);
-    console.log("Copiado");
+    navigator.clipboard.writeText("davidcamposg23@gmail.com");
+    alert("Email Copiado com Sucesso!");
 }
 
 

@@ -1053,6 +1053,7 @@ body{
   background-color: #EBEBEC;
   /* max-width: 1920px; */
   margin: 0 auto;
+  min-width: 605px;
 }
 
 .fundo{
@@ -1265,6 +1266,10 @@ p{
   border-color: rgb(255 179 179 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(255 179 179 / var(--tw-bg-opacity));
+}
+
+.hover\:cursor-pointer:hover{
+  cursor: pointer;
 }
 
 .hover\:bg-white:hover{
