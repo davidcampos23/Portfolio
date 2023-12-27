@@ -673,6 +673,10 @@ video {
   margin-top: 440px;
 }
 
+.ml-24{
+  margin-left: 6rem;
+}
+
 .flex{
   display: flex;
 }
@@ -697,12 +701,12 @@ video {
   height: 2.25rem;
 }
 
-.h-96{
-  height: 24rem;
-}
-
 .h-\[500px\]{
   height: 500px;
+}
+
+.h-foto{
+  height: 714px;
 }
 
 .h-full{
@@ -765,16 +769,16 @@ video {
   width: 15rem;
 }
 
-.w-96{
-  width: 24rem;
-}
-
 .w-\[880px\]{
   width: 880px;
 }
 
 .w-\[900px\]{
   width: 900px;
+}
+
+.w-foto{
+  width: 553px;
 }
 
 .w-full{
@@ -889,6 +893,17 @@ video {
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-x-black{
+  --tw-border-opacity: 1;
+  border-left-color: rgb(0 0 0 / var(--tw-border-opacity));
+  border-right-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-gray-400{
@@ -1268,10 +1283,6 @@ p{
   background-color: rgb(255 179 179 / var(--tw-bg-opacity));
 }
 
-.hover\:cursor-pointer:hover{
-  cursor: pointer;
-}
-
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1361,8 +1372,16 @@ p{
     justify-content: center;
   }
 
-  .tablet\:bg-\[url\(\'img\/download\.jpg\'\)\]{
-    background-image: url('img/download.jpg');
+  .tablet\:bg-\[url\(\'img\/PerfilFoto\.png\'\)\]{
+    background-image: url('img/PerfilFoto.png');
+  }
+
+  .tablet\:bg-\[url\(\'img\/PerfilFotoIA\.png\'\)\]{
+    background-image: url('img/PerfilFotoIA.png');
+  }
+
+  .tablet\:bg-\[url\(\'img\/PerfilFotoFundo\.png\'\)\]{
+    background-image: url('img/PerfilFotoFundo.png');
   }
 
   .tablet\:bg-cover{
@@ -1375,6 +1394,10 @@ p{
 
   .tablet\:pl-0{
     padding-left: 0px;
+  }
+
+  .tablet\:text-left{
+    text-align: left;
   }
 }
 

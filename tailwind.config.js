@@ -38,12 +38,14 @@ module.exports = {
         px472: '29.5rem',
         px976: '61rem',
         pc400: '400%',
+        foto: '553px'
       },
       height:{
         navH: 'var(--nav-height)',
         project: '25rem',
         slideProj: '30rem',
-        px89: '5.5rem'
+        px89: '5.5rem',
+        foto: '714px'
       },
     },
   },
