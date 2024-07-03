@@ -5,8 +5,9 @@ module.exports = {
   theme: {
     extend: {
       screens:{
-        'tablet':{'max': '1200px'},
-        'mobile':{'max': '900px'}
+        'skillLarge':{'max': '1705px'},
+        'tablet':{'max': '1280px'},
+        'mobile':{'max': '1020px'}
       },
       colors:{
         primary: '#EBEBEC',
@@ -37,6 +38,7 @@ module.exports = {
         project: '40rem',
         px472: '29.5rem',
         px976: '61rem',
+        pxSkillLarge: '700px',
         pc400: '400%',
         foto: '553px'
       },

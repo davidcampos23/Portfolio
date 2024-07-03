@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -34,9 +34,11 @@
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
 */
 
-html {
+html,
+:host {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -46,12 +48,14 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
   font-variation-settings: normal;
   /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
 }
 
 /*
@@ -123,8 +127,10 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -133,8 +139,12 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-size: 1em;
+  font-feature-settings: normal;
   /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
 }
 
 /*
@@ -203,6 +213,8 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -226,9 +238,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -484,6 +496,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop{
@@ -534,6 +550,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 .absolute{
@@ -581,16 +601,16 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.ml-24{
+  margin-left: 6rem;
+}
+
 .ml-3{
   margin-left: 0.75rem;
 }
 
 .ml-4{
   margin-left: 1rem;
-}
-
-.ml-40{
-  margin-left: 10rem;
 }
 
 .ml-8{
@@ -673,10 +693,6 @@ video {
   margin-top: 440px;
 }
 
-.ml-24{
-  margin-left: 6rem;
-}
-
 .flex{
   display: flex;
 }
@@ -691,6 +707,10 @@ video {
 
 .h-28{
   height: 7rem;
+}
+
+.h-40{
+  height: 10rem;
 }
 
 .h-5{
@@ -809,8 +829,8 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-5{
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -831,10 +851,6 @@ video {
 
 .justify-around{
   justify-content: space-around;
-}
-
-.justify-items-center{
-  justify-items: center;
 }
 
 .gap-16{
@@ -895,17 +911,6 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-black{
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.border-x-black{
-  --tw-border-opacity: 1;
-  border-left-color: rgb(0 0 0 / var(--tw-border-opacity));
-  border-right-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .bg-gray-400{
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
@@ -942,6 +947,15 @@ video {
   padding: 0.75rem;
 }
 
+.p-4{
+  padding: 1rem;
+}
+
+.px-24{
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -957,6 +971,10 @@ video {
 
 .pr-2{
   padding-right: 0.5rem;
+}
+
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -977,6 +995,16 @@ video {
 
 .text-end{
   text-align: end;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-px24{
@@ -1002,6 +1030,14 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-normal{
+  font-weight: 400;
 }
 
 .text-black{
@@ -1288,54 +1324,64 @@ p{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:border-white){
+.dark\:border-white:is(.dark *){
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-:is(.dark .dark\:bg-primaryDK){
+.dark\:bg-primaryDK:is(.dark *){
   --tw-bg-opacity: 1;
   background-color: rgb(22 22 22 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:bg-secondDK){
+.dark\:bg-secondDK:is(.dark *){
   --tw-bg-opacity: 1;
   background-color: rgb(50 50 50 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:bg-skillsDK){
+.dark\:bg-skillsDK:is(.dark *){
   --tw-bg-opacity: 1;
   background-color: rgb(43 43 43 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:text-textDKc){
+.dark\:text-textDKc:is(.dark *){
   color: rgba(255, 255, 255, 0.60);
 }
 
-:is(.dark .dark\:text-white){
+.dark\:text-white:is(.dark *){
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-:is(.dark .dark\:shadow-darkBb){
+.dark\:shadow-darkBb:is(.dark *){
   --tw-shadow: 0 0 0.5rem gray;
   --tw-shadow-colored: 0 0 0.5rem var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-:is(.dark .dark\:shadow-darkBw){
+.dark\:shadow-darkBw:is(.dark *){
   --tw-shadow: 0 0 0.5rem black;
   --tw-shadow-colored: 0 0 0.5rem var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-:is(.dark .dark\:shadow-darkBx){
+.dark\:shadow-darkBx:is(.dark *){
   --tw-shadow: 0 0 1rem black;
   --tw-shadow-colored: 0 0 1rem var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1705px){
+  .skillLarge\:h-auto{
+    height: auto;
+  }
+
+  .skillLarge\:w-pxSkillLarge{
+    width: 700px;
+  }
+}
+
+@media (max-width: 1280px){
   .tablet\:mb-3{
     margin-bottom: 0.75rem;
   }
@@ -1352,6 +1398,10 @@ p{
     display: none;
   }
 
+  .tablet\:h-auto{
+    height: auto;
+  }
+
   .tablet\:w-10\/12{
     width: 83.333333%;
   }
@@ -1360,8 +1410,12 @@ p{
     width: 100%;
   }
 
-  .tablet\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .tablet\:w-px472{
+    width: 29.5rem;
+  }
+
+  .tablet\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .tablet\:justify-start{
@@ -1370,14 +1424,6 @@ p{
 
   .tablet\:justify-center{
     justify-content: center;
-  }
-
-  .tablet\:bg-\[url\(\'img\/PerfilFoto\.png\'\)\]{
-    background-image: url('img/PerfilFoto.png');
-  }
-
-  .tablet\:bg-\[url\(\'img\/PerfilFotoIA\.png\'\)\]{
-    background-image: url('img/PerfilFotoIA.png');
   }
 
   .tablet\:bg-\[url\(\'img\/PerfilFotoFundo\.png\'\)\]{
@@ -1401,7 +1447,15 @@ p{
   }
 }
 
-@media (max-width: 900px){
+@media (max-width: 1020px){
+  .mobile\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .mobile\:block{
+    display: block;
+  }
+
   .mobile\:hidden{
     display: none;
   }
@@ -1418,7 +1472,11 @@ p{
     width: 100%;
   }
 
-  .mobile\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .mobile\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .mobile\:justify-center{
+    justify-content: center;
   }
 }
